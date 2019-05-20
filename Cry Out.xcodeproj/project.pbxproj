@@ -12,6 +12,8 @@
 		00F555C322927ED9004A121C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F555C122927ED9004A121C /* Main.storyboard */; };
 		00F555C522927EDA004A121C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F555C422927EDA004A121C /* Assets.xcassets */; };
 		00F555C822927EDA004A121C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F555C622927EDA004A121C /* LaunchScreen.storyboard */; };
+		00F555D0229288B5004A121C /* Rain Drops.sks in Resources */ = {isa = PBXBuildFile; fileRef = 00F555CF229288B5004A121C /* Rain Drops.sks */; };
+		00F555D422929E7F004A121C /* Light_Rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 00F555D322929E7F004A121C /* Light_Rain.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		00F555C422927EDA004A121C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00F555C722927EDA004A121C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00F555C922927EDA004A121C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F555CF229288B5004A121C /* Rain Drops.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Rain Drops.sks"; sourceTree = "<group>"; };
+		00F555D322929E7F004A121C /* Light_Rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Light_Rain.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		00F555BC22927ED9004A121C /* Cry Out */ = {
 			isa = PBXGroup;
 			children = (
+				00F555D222929E50004A121C /* Sounds */,
 				00F555BD22927ED9004A121C /* AppDelegate.swift */,
 				00F555BF22927ED9004A121C /* ViewController.swift */,
 				00F555C122927ED9004A121C /* Main.storyboard */,
+				00F555CF229288B5004A121C /* Rain Drops.sks */,
 				00F555C422927EDA004A121C /* Assets.xcassets */,
 				00F555C622927EDA004A121C /* LaunchScreen.storyboard */,
 				00F555C922927EDA004A121C /* Info.plist */,
 			);
 			path = "Cry Out";
+			sourceTree = "<group>";
+		};
+		00F555D222929E50004A121C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				00F555D322929E7F004A121C /* Light_Rain.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F555D422929E7F004A121C /* Light_Rain.mp3 in Resources */,
 				00F555C822927EDA004A121C /* LaunchScreen.storyboard in Resources */,
 				00F555C522927EDA004A121C /* Assets.xcassets in Resources */,
 				00F555C322927ED9004A121C /* Main.storyboard in Resources */,
+				00F555D0229288B5004A121C /* Rain Drops.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWMXGKJYAX;
 				INFOPLIST_FILE = "Cry Out/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZWMXGKJYAX;
 				INFOPLIST_FILE = "Cry Out/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
