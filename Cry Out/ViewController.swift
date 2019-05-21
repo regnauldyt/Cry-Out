@@ -16,14 +16,13 @@ class ViewController: UIViewController {
     var audioPlayer = AVAudioPlayer()
     let rainSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Light_Rain", ofType: "mp3")!)
     var play = false
-    var btn = false
+    var btn = 1
     var emitter = SKEmitterNode()
-    
+    var sceneView = SKView()
+    var scene = SKScene()
+    var counter = 0
     
     @IBOutlet weak var btnPlayOutlet: UIButton!
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +30,15 @@ class ViewController: UIViewController {
     
         
     }
+    
     //BUAT KASIH HUJAN
     func rainDrops() {
-        let sceneView = SKView(frame: view.frame)
+        sceneView = SKView(frame: view.frame)
         sceneView.backgroundColor = .clear
         sceneView.allowsTransparency = true
         self.view.addSubview(sceneView)
         
-        let scene = SKScene(size: view.bounds.size)
+        scene = SKScene(size: view.bounds.size)
         scene.backgroundColor = .clear
         
         emitter = SKEmitterNode(fileNamed: "Rain Drops")!
@@ -46,28 +46,22 @@ class ViewController: UIViewController {
         scene.addChild(emitter)
         sceneView.presentScene(scene)
         view.bringSubviewToFront(btnPlayOutlet)
-        
     }
     
     //BUTTON PLAY
     @IBAction func btnPlay(_ sender: Any) {
-    
-        rainDrops()
-        if btn == false {
-            btnPlayOutlet.setImage(UIImage(named: "Pause Button Copy"), for: .normal)
-            btn = true
-            
-        } else {
+        counter += 1
+        if counter % 2 == 0 {
             btnPlayOutlet.setImage(UIImage(named: "Play Button"), for: .normal)
-            btn = false
-            emitter.removeFromParent()
+            scene.removeAllChildren()
+        } else {
+            btnPlayOutlet.setImage(UIImage(named: "Pause Button Copy"), for: .normal)
+            rainDrops()
         }
-        
         playSound()
-
-    }
+ }
     
-        //SOUND
+    //SOUND
     func playSound() {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: rainSound)
