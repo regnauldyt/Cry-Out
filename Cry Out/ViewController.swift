@@ -14,7 +14,7 @@ import GameKit
 class ViewController: UIViewController {
     let emRain = SKSpriteNode(fileNamed: "emitter")
     var audioPlayer = AVAudioPlayer()
-    let rainSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Light_Rain", ofType: "mp3")!)
+    let rainSound = URL(fileURLWithPath: Bundle.main.path(forResource: "cryOutBgm", ofType: "mp3")!)
     var play = false
     var btn = 1
     var emitter = SKEmitterNode()

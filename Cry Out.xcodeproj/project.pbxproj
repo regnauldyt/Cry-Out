@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002E96352298015A006D9F17 /* cryOutBgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002E96342298015A006D9F17 /* cryOutBgm.mp3 */; };
 		00F555BE22927ED9004A121C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F555BD22927ED9004A121C /* AppDelegate.swift */; };
 		00F555C022927ED9004A121C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F555BF22927ED9004A121C /* ViewController.swift */; };
 		00F555C322927ED9004A121C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F555C122927ED9004A121C /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002E96342298015A006D9F17 /* cryOutBgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cryOutBgm.mp3; sourceTree = "<group>"; };
 		00F555BA22927ED9004A121C /* Cry Out.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cry Out.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F555BD22927ED9004A121C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F555BF22927ED9004A121C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				00F555D322929E7F004A121C /* Light_Rain.mp3 */,
+				002E96342298015A006D9F17 /* cryOutBgm.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				00F555D422929E7F004A121C /* Light_Rain.mp3 in Resources */,
 				00F555C822927EDA004A121C /* LaunchScreen.storyboard in Resources */,
 				00F555C522927EDA004A121C /* Assets.xcassets in Resources */,
+				002E96352298015A006D9F17 /* cryOutBgm.mp3 in Resources */,
 				00F555C322927ED9004A121C /* Main.storyboard in Resources */,
 				00F555D0229288B5004A121C /* Rain Drops.sks in Resources */,
 			);
