@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             btnPlayOutlet.setImage(UIImage(named: "Play Button"), for: .normal)
             scene.removeAllChildren()
         } else {
-            btnPlayOutlet.setImage(UIImage(named: "Pause Button Copy"), for: .normal)
+            btnPlayOutlet.setImage(UIImage(named: "Pause Button"), for: .normal)
             rainDrops()
         }
         playSound()
@@ -66,6 +66,7 @@ class ViewController: UIViewController {
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: rainSound)
             if play == false {
+                audioPlayer.numberOfLoops = -1
                 audioPlayer.play()
                 play = true
             } else {
@@ -73,9 +74,8 @@ class ViewController: UIViewController {
                 play = false
             }
         } catch {
-    
+
         }
     }
-    
     
 }
